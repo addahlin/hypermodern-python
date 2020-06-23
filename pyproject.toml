@@ -1,17 +1,22 @@
 [tool.poetry]
-name = "hypermodern-python"
+name = "ad-hypermodern-python"
 version = "0.1.0"
 description = "The hypermodern Python project"
 license = "MIT"
 readme = "README.md"
-homepage = ""
-repository = ""
+homepage = "https://github.com/addahlin/hypermodern-python"
+repository = "https://github.com/addahlin/hypermodern-python"
 authors = ["andrewdahlin <dangerdrew@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.7"
+click = "^7.1.2"
+requests = "^2.24.0"
 
 [tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+hypermodern-pythona = "src.ad_hypermodern_python.console:main"
 
 [build-system]
 requires = ["poetry>=0.12"]
